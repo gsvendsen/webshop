@@ -1,0 +1,15 @@
+.product-thumbnail {
+  height:100px;
+}
+
+.product-list-item {
+  display:flex;
+  margin: 10px 0 0 0;
+}
+
+.product-list-info {
+  display:flex;
+  flex-direction:column;
+  padding: 0 10px;
+  align-items: flex-start;
+}

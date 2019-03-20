@@ -1,0 +1,13 @@
+.checkout-container {
+  width:100%;
+  height:100vh;
+  position:absolute;
+  background: yellow;
+}
+
+.exit-icon {
+  cursor:pointer;
+  position:absolute;
+  top:50px;
+  right:50px;
+}
