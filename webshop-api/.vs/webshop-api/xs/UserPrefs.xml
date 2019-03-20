@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{BA36B341-5961-40A8-B8F9-770838A699DE}|Default">
+  <MonoDevelop.Ide.ItemProperties.webshop-api PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="webshop-api/Properties/launchSettings.json">
+    <Files>
+      <File FileName="webshop-api/appsettings.json" Line="3" Column="77" />
+      <File FileName="webshop-api/Models/Product.cs" Line="10" Column="43" />
+      <File FileName="webshop-api/Controllers/ProductsController.cs" Line="29" Column="10" />
+      <File FileName="webshop-api/Controllers/ValuesController.cs" Line="1" Column="1" />
+      <File FileName="webshop-api/Repositories/ProductsRespository.cs" Line="9" Column="19" />
+      <File FileName="webshop-api/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="webshop-api/Program.cs" Line="18" Column="10" />
+      <File FileName="webshop-api/Startup.cs" Line="1" Column="1" />
+      <File FileName="webshop-api/Properties/launchSettings.json" Line="61" Column="2" />
+      <File FileName="webshop-api/Services/ProductsService.cs" Line="20" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

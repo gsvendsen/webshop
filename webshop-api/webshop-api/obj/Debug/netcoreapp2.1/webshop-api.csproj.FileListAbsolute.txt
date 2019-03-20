@@ -1,0 +1,14 @@
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/webshop/webshop-api/webshop-api/obj/Debug/netcoreapp2.1/webshop-api.csprojAssemblyReference.cache
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/webshop/webshop-api/webshop-api/obj/Debug/netcoreapp2.1/webshop-api.csproj.CoreCompileInputs.cache
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/webshop/webshop-api/webshop-api/obj/Debug/netcoreapp2.1/webshop-api.RazorAssemblyInfo.cache
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/webshop/webshop-api/webshop-api/obj/Debug/netcoreapp2.1/webshop-api.RazorAssemblyInfo.cs
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/webshop/webshop-api/webshop-api/obj/Debug/netcoreapp2.1/webshop-api.AssemblyInfoInputs.cache
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/webshop/webshop-api/webshop-api/obj/Debug/netcoreapp2.1/webshop-api.AssemblyInfo.cs
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/webshop/webshop-api/webshop-api/bin/Debug/netcoreapp2.1/webshop-api.deps.json
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/webshop/webshop-api/webshop-api/bin/Debug/netcoreapp2.1/webshop-api.runtimeconfig.json
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/webshop/webshop-api/webshop-api/bin/Debug/netcoreapp2.1/webshop-api.runtimeconfig.dev.json
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/webshop/webshop-api/webshop-api/bin/Debug/netcoreapp2.1/webshop-api.dll
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/webshop/webshop-api/webshop-api/bin/Debug/netcoreapp2.1/webshop-api.pdb
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/webshop/webshop-api/webshop-api/obj/Debug/netcoreapp2.1/webshop-api.RazorTargetAssemblyInfo.cache
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/webshop/webshop-api/webshop-api/obj/Debug/netcoreapp2.1/webshop-api.dll
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/webshop/webshop-api/webshop-api/obj/Debug/netcoreapp2.1/webshop-api.pdb
