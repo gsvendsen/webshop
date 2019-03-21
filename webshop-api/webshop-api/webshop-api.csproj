@@ -19,5 +19,6 @@
 
   <ItemGroup>
     <Compile Remove="Services\ProductsRepository.cs" />
+    <Compile Remove="Services\IProductsService.cs" />
   </ItemGroup>
 </Project>

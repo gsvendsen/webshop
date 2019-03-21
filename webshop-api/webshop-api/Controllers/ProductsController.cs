@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using webshopapi.Models;
+using webshop_api.Models;
 using Newtonsoft.Json;
 using Dapper;
 using Microsoft.Extensions.Configuration;

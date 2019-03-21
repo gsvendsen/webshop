@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using webshopapi.Models;
+using webshop_api.Models;
 using MySql.Data.MySqlClient;
 using Dapper;
 using System.Linq;
@@ -11,9 +11,9 @@ namespace webshop_api.Services
 {
     public class ProductsService
     {
-        private readonly ProductsRepository productsRepository;
+        private readonly IProductsRepository productsRepository;
 
-        public ProductsService(ProductsRepository productsRespository)
+        public ProductsService(IProductsRepository productsRespository)
         {
             this.productsRepository = productsRespository;
         }

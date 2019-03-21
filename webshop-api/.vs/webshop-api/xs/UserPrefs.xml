@@ -1,17 +1,21 @@
 ﻿<Properties StartupConfiguration="{BA36B341-5961-40A8-B8F9-770838A699DE}|Default">
   <MonoDevelop.Ide.ItemProperties.webshop-api PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="webshop-api/Properties/launchSettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="webshop-api/Program.cs">
     <Files>
-      <File FileName="webshop-api/appsettings.json" Line="3" Column="77" />
-      <File FileName="webshop-api/Models/Product.cs" Line="10" Column="43" />
-      <File FileName="webshop-api/Controllers/ProductsController.cs" Line="29" Column="10" />
+      <File FileName="webshop-api/appsettings.json" Line="4" Column="1" />
+      <File FileName="webshop-api/Models/Product.cs" Line="2" Column="19" />
+      <File FileName="webshop-api/Controllers/ProductsController.cs" Line="13" Column="15" />
       <File FileName="webshop-api/Controllers/ValuesController.cs" Line="1" Column="1" />
-      <File FileName="webshop-api/Repositories/ProductsRespository.cs" Line="9" Column="19" />
+      <File FileName="webshop-api/Repositories/ProductsRespository.cs" Line="3" Column="15" />
       <File FileName="webshop-api/appsettings.Development.json" Line="1" Column="1" />
-      <File FileName="webshop-api/Program.cs" Line="18" Column="10" />
+      <File FileName="webshop-api/Program.cs" Line="12" Column="2" />
       <File FileName="webshop-api/Startup.cs" Line="1" Column="1" />
-      <File FileName="webshop-api/Properties/launchSettings.json" Line="61" Column="2" />
-      <File FileName="webshop-api/Services/ProductsService.cs" Line="20" Column="1" />
+      <File FileName="webshop-api/Properties/launchSettings.json" Line="9" Column="7" />
+      <File FileName="webshop-api/Services/ProductsService.cs" Line="3" Column="15" />
+      <File FileName="webshop-api.UnitTests/Class1.cs" Line="1" Column="1" />
+      <File FileName="webshop-api/Services/IProductsService.cs" Line="15" Column="1" />
+      <File FileName="webshop-api/Repositories/IProductsRepository.cs" Line="3" Column="15" />
+      <File FileName="webshop-api.UnitTests/Services/ProductsServiceTests.cs" Line="6" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

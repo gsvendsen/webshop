@@ -1,5 +1,5 @@
 ﻿using System;
-namespace webshopapi.Models
+namespace webshop_api.Models
 {
     public class Product
     {

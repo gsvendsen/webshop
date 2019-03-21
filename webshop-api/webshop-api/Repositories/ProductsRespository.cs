@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using webshopapi.Models;
+using webshop_api.Models;
 using MySql.Data.MySqlClient;
 using Dapper;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Transactions;
 
 namespace webshop_api.Repositories
 {
-    public class ProductsRepository
+    public class ProductsRepository : IProductsRepository
     {
         private readonly string connectionString;
 
