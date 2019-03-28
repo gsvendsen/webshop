@@ -27,7 +27,7 @@ namespace webshop_api.Controllers
 
         public ProductsController(IConfiguration configuration)
         {
-            this.connectionString = configuration.GetConnectionString("ProductsConnectionString");
+            this.connectionString = configuration.GetConnectionString("ConnectionString");
             this.productsService = new ProductsService(new ProductsRepository(connectionString));
 
         }
