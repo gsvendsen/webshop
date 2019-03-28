@@ -1,22 +1,49 @@
 ﻿<Properties StartupConfiguration="{BA36B341-5961-40A8-B8F9-770838A699DE}|Default">
   <MonoDevelop.Ide.ItemProperties.webshop-api PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="webshop-api/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="webshop-api/Repositories/IOrdersRepository.cs">
     <Files>
-      <File FileName="webshop-api/appsettings.json" Line="4" Column="1" />
-      <File FileName="webshop-api/Models/Product.cs" Line="2" Column="19" />
-      <File FileName="webshop-api/Controllers/ProductsController.cs" Line="13" Column="15" />
+      <File FileName="webshop-api/appsettings.json" Line="3" Column="6" />
+      <File FileName="webshop-api/Models/Product.cs" Line="14" Column="10" />
+      <File FileName="webshop-api/Controllers/ProductsController.cs" Line="22" Column="36" />
       <File FileName="webshop-api/Controllers/ValuesController.cs" Line="1" Column="1" />
-      <File FileName="webshop-api/Repositories/ProductsRespository.cs" Line="3" Column="15" />
+      <File FileName="webshop-api/Repositories/ProductsRepository.cs" Line="38" Column="40" />
       <File FileName="webshop-api/appsettings.Development.json" Line="1" Column="1" />
-      <File FileName="webshop-api/Program.cs" Line="12" Column="2" />
-      <File FileName="webshop-api/Startup.cs" Line="1" Column="1" />
+      <File FileName="webshop-api/Program.cs" Line="25" Column="1" />
+      <File FileName="webshop-api/Startup.cs" Line="11" Column="1" />
       <File FileName="webshop-api/Properties/launchSettings.json" Line="9" Column="7" />
-      <File FileName="webshop-api/Services/ProductsService.cs" Line="3" Column="15" />
+      <File FileName="webshop-api/Services/ProductsService.cs" Line="85" Column="1" />
       <File FileName="webshop-api.UnitTests/Class1.cs" Line="1" Column="1" />
       <File FileName="webshop-api/Services/IProductsService.cs" Line="15" Column="1" />
-      <File FileName="webshop-api/Repositories/IProductsRepository.cs" Line="3" Column="15" />
+      <File FileName="webshop-api/Repositories/IProductsRepository.cs" Line="3" Column="18" />
       <File FileName="webshop-api.UnitTests/Services/ProductsServiceTests.cs" Line="6" Column="28" />
+      <File FileName="webshop-api/Models/CartItem.cs" Line="9" Column="30" />
+      <File FileName="webshop-api/Services/CartItemsService.cs" Line="68" Column="1" />
+      <File FileName="webshop-api/Repositories/CartItemsRepository.cs" Line="47" Column="1" />
+      <File FileName="webshop-api/Repositories/ICartItemsRepository.cs" Line="14" Column="1" />
+      <File FileName="webshop-api/Controllers/CartItemsController.cs" Line="58" Column="18" />
+      <File FileName="webshop-api/Controllers/OrdersController.cs" Line="49" Column="10" />
+      <File FileName="webshop-api/Models/Order.cs" Line="11" Column="47" />
+      <File FileName="webshop-api/Services/OrdersService.cs" Line="46" Column="9" />
+      <File FileName="webshop-api/Repositories/OrdersRepository.cs" Line="36" Column="10" />
+      <File FileName="webshop-api/Repositories/IOrdersRepository.cs" Line="7" Column="39" />
     </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="webshop-api" expanded="True" selected="True">
+            <Node name="webshop-api.UnitTests" expanded="True">
+              <Node name="webshop_api" expanded="True">
+                <Node name="UnitTests" expanded="True">
+                  <Node name="Services" expanded="True">
+                    <Node name="ProductsServiceTests" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

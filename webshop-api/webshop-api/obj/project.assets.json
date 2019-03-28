@@ -11691,11 +11691,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/webshop/webshop-api/webshop-api/webshop-api.csproj",
+      "projectUniqueName": "/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api/webshop-api.csproj",
       "projectName": "webshop-api",
-      "projectPath": "/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/webshop/webshop-api/webshop-api/webshop-api.csproj",
+      "projectPath": "/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api/webshop-api.csproj",
       "packagesPath": "/Users/gustavsvendsen/.nuget/packages/",
-      "outputPath": "/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/webshop/webshop-api/webshop-api/obj",
+      "outputPath": "/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
