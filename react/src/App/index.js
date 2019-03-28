@@ -15,11 +15,13 @@ class App extends Component {
     super()
     this.state = {
       products : [],
+      cartId : 1,
       isLoading : false,
       isCartToggled : false,
       isCheckoutToggled : false,
-      cart : JSON.parse(localStorage.getItem('shoppingCart')) ? JSON.parse(localStorage.getItem('shoppingCart')) : []
+      cart : []
     }
+
     this.addToCart = this.addToCart.bind(this)
     this.toggleCart = this.toggleCart.bind(this)
     this.clearCart = this.clearCart.bind(this)
@@ -30,25 +32,55 @@ class App extends Component {
   componentDidMount() {
     this.setState({ isLoading : true})
 
+    // Get all Products
     axios.get(`/api/products`)
-    // We get the API response and receive data in JSON format...
-    .then(response => {
-        this.setState({
-          products: response.data,
-          isLoading: false,
-        })
+      .then(response => {
+          this.setState({
+            products: response.data,
+            isLoading: false,
+          })
+        }
+      )
+
+    this.updateCart()
+  }
+
+  updateCart() {
+
+    fetch(`http://localhost:5000/api/cartitems/${this.state.cartId}`, {
+      method: "GET",
+      mode: "cors",
+      headers: {
+          "Content-Type": "application/json",
       }
-    )
+    })
+      .then(response => response.status !== 404 && response.json())
+      .then(response => {
+        this.setState({
+          cart: response.length > 0 ? response : []
+        })
+      })
   }
 
   addToCart(event, product) {
     event.preventDefault();
-    this.setState((previousState) => {
-      previousState.cart.push(product)
-      localStorage.setItem('shoppingCart', JSON.stringify(previousState.cart));
-      return {cart: previousState.cart};
-    })
 
+    const data = {
+      cart_id : this.state.cartId,
+      product_id : product.id
+    }
+
+    fetch(`http://localhost:5000/api/cartitems/`, {
+            method: "POST", // *GET, POST, PUT, DELETE, etc.
+            mode: "cors", // no-cors, cors, *same-origin
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data), // body data type must match "Content-Type" header
+        })
+        .then(response => {
+          this.updateCart()
+        })
   }
 
   toggleCart() {
@@ -58,8 +90,20 @@ class App extends Component {
   }
 
   clearCart () {
-    this.setState({cart:[]})
-    localStorage.removeItem('shoppingCart')
+
+    fetch(`http://localhost:5000/api/cartitems/${this.state.cartId}`, {
+      method: "DELETE",
+      mode: "cors",
+      headers: {
+          "Content-Type": "application/json",
+      }
+    })
+      .then(response => {
+        this.setState({
+          cart: []
+        })
+      })
+
     this.toggleCart()
   }
 
