@@ -1,10 +1,12 @@
 ﻿using System;
-namespace webshopapi.Repositories
+using System.Collections.Generic;
+using webshop_api.Models;
+
+namespace webshop_api.Repositories
 {
-    public class IOrdersRepository
+    public interface IOrdersRepository
     {
-        public IOrdersRepository()
-        {
-        }
+        Order Get(int id);
+        void Add(Order order);
     }
 }
