@@ -6405,11 +6405,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/webshop/webshop-api/webshop-api.UnitTests/webshop-api.UnitTests.csproj",
+      "projectUniqueName": "/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api.UnitTests/webshop-api.UnitTests.csproj",
       "projectName": "webshop-api.UnitTests",
-      "projectPath": "/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/webshop/webshop-api/webshop-api.UnitTests/webshop-api.UnitTests.csproj",
+      "projectPath": "/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api.UnitTests/webshop-api.UnitTests.csproj",
       "packagesPath": "/Users/gustavsvendsen/.nuget/packages/",
-      "outputPath": "/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/webshop/webshop-api/webshop-api.UnitTests/obj",
+      "outputPath": "/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api.UnitTests/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -6426,8 +6426,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/webshop/webshop-api/webshop-api/webshop-api.csproj": {
-              "projectPath": "/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/webshop/webshop-api/webshop-api/webshop-api.csproj"
+            "/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api/webshop-api.csproj": {
+              "projectPath": "/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api/webshop-api.csproj"
             }
           }
         }
