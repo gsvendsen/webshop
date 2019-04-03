@@ -19,6 +19,7 @@ class App extends Component {
       isLoading : false,
       isCartToggled : false,
       isCheckoutToggled : false,
+      isCartAnimated : false,
       cart : []
     }
 
@@ -26,6 +27,7 @@ class App extends Component {
     this.toggleCart = this.toggleCart.bind(this)
     this.clearCart = this.clearCart.bind(this)
     this.toggleCheckout = this.toggleCheckout.bind(this)
+    this.animateCart = this.animateCart.bind(this)
 
   }
 
@@ -62,8 +64,19 @@ class App extends Component {
       })
   }
 
+  animateCart () {
+    this.setState({isCartAnimated : true})
+
+    setTimeout(() => {
+      this.setState({isCartAnimated : false})
+
+    }, 500)
+  }
+
   addToCart(event, product) {
     event.preventDefault();
+
+    this.animateCart()
 
     const data = {
       cart_id : this.state.cartId,
@@ -114,15 +127,30 @@ class App extends Component {
     this.toggleCart()
   }
 
+  submitOrder (formData) {
+    fetch(`http://localhost:5000/api/orders/1`, {
+            method: "POST", // *GET, POST, PUT, DELETE, etc.
+            mode: "cors", // no-cors, cors, *same-origin
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData), // body data type must match "Content-Type" header
+    })
+      .then(response => {
+        this.clearCart();
+      })
+  }
+
   render() {
     return (
       <div className="App">
-        {this.state.isCheckoutToggled ? <Checkout toggleCheckout={this.toggleCheckout} cart={this.state.cart} /> : "" }
-        <div onClick={this.toggleCart} className="shopping-cart">
+        <img className="logotype" src="https://i.imgur.com/CJ7QEi3.png"/>
+        {this.state.isCheckoutToggled && <Checkout submitOrder={this.submitOrder} toggleCart={this.toggleCart} toggleCheckout={this.toggleCheckout} clearCart={this.clearCart} cart={this.state.cart} />}
+        <div onClick={this.toggleCart} className={this.state.isCartAnimated ? 'shopping-cart animated' : 'shopping-cart'}>
           <img alt="Shopping Cart" width="25" height="25" src="https://image.flaticon.com/icons/svg/2/2772.svg"></img>
           {this.state.cart.length}
         </div>
-        {this.state.isCartToggled ? <Cart clearCart={this.clearCart} toggleCheckout={this.toggleCheckout} data={this.state.cart} /> : ""}
+        {this.state.isCartToggled && <Cart toggleCart={this.toggleCart} clearCart={this.clearCart} toggleCheckout={this.toggleCheckout} data={this.state.cart} />}
         {this.isLoading ? <p>Loading...</p> : <Products addToCart={this.addToCart} data={this.state.products} />}
       </div>
     );
