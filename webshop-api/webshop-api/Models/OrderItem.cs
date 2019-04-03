@@ -10,7 +10,7 @@ namespace webshop_api.Models
         public string Product_description { get; set; }
         public float Product_price { get; set; }
 
-        public Orderitem()
+        public OrderItem()
         {
         }
     }
