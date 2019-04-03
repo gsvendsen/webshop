@@ -33,7 +33,6 @@ namespace webshop_api.UnitTests.Services
                 Name = "White Tshirt",
                 Description = "This is a white t-shirt",
                 Price = 25,
-                Inventory = 5,
                 Image = "image-url"
             };
 
@@ -61,7 +60,6 @@ namespace webshop_api.UnitTests.Services
                 Name = "White Tshirt",
                 Description = "This is a white t-shirt",
                 Price = 25,
-                Inventory = 5,
                 Image = "image-url"
             };
 

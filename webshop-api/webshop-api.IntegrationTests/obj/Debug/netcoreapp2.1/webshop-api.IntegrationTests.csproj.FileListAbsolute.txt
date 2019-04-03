@@ -1,0 +1,17 @@
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api.IntegrationTests/bin/Debug/netcoreapp2.1/NUnit3.TestAdapter.dll
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api.IntegrationTests/bin/Debug/netcoreapp2.1/NUnit3.TestAdapter.pdb
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api.IntegrationTests/bin/Debug/netcoreapp2.1/nunit.engine.netstandard.dll
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api.IntegrationTests/bin/Debug/netcoreapp2.1/webshop-api.IntegrationTests.deps.json
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api.IntegrationTests/bin/Debug/netcoreapp2.1/webshop-api.IntegrationTests.runtimeconfig.json
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api.IntegrationTests/bin/Debug/netcoreapp2.1/webshop-api.IntegrationTests.runtimeconfig.dev.json
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api.IntegrationTests/bin/Debug/netcoreapp2.1/webshop-api.IntegrationTests.dll
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api.IntegrationTests/bin/Debug/netcoreapp2.1/webshop-api.IntegrationTests.pdb
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api.IntegrationTests/bin/Debug/netcoreapp2.1/webshop-api.dll
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api.IntegrationTests/bin/Debug/netcoreapp2.1/webshop-api.pdb
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api.IntegrationTests/obj/Debug/netcoreapp2.1/webshop-api.IntegrationTests.csprojAssemblyReference.cache
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api.IntegrationTests/obj/Debug/netcoreapp2.1/webshop-api.IntegrationTests.csproj.CoreCompileInputs.cache
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api.IntegrationTests/obj/Debug/netcoreapp2.1/webshop-api.IntegrationTests.AssemblyInfoInputs.cache
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api.IntegrationTests/obj/Debug/netcoreapp2.1/webshop-api.IntegrationTests.AssemblyInfo.cs
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api.IntegrationTests/obj/Debug/netcoreapp2.1/webshop-api.IntegrationTests.csproj.CopyComplete
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api.IntegrationTests/obj/Debug/netcoreapp2.1/webshop-api.IntegrationTests.dll
+/Users/gustavsvendsen/Documents/Yrgo/Uppgifter/git-webshop/webshop/webshop-api/webshop-api.IntegrationTests/obj/Debug/netcoreapp2.1/webshop-api.IntegrationTests.pdb
