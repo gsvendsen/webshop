@@ -7,7 +7,6 @@ import ProductListItem from '../ProductListItem/'
 const Cart = props => {
 
   const cartData = props.data;
-  console.log(cartData)
   return (
     <div className="cart-container">
       <img alt="Exit button for checkout" className="exit-icon" onClick={props.toggleCart} height="25" width="25" src="https://image.flaticon.com/icons/svg/109/109602.svg"/>
