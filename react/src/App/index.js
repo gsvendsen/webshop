@@ -20,7 +20,8 @@ class App extends Component {
       isCartToggled : false,
       isCheckoutToggled : false,
       isCartAnimated : false,
-      cart : []
+      cart : [],
+      totalPrice : 0
     }
 
     this.addToCart = this.addToCart.bind(this)
@@ -28,6 +29,7 @@ class App extends Component {
     this.clearCart = this.clearCart.bind(this)
     this.toggleCheckout = this.toggleCheckout.bind(this)
     this.animateCart = this.animateCart.bind(this)
+    this.updatePrice = this.updatePrice.bind(this)
 
   }
 
@@ -45,10 +47,24 @@ class App extends Component {
       )
 
     this.updateCart()
+
   }
 
-  updateCart() {
+  updatePrice() {
 
+    this.state.cart.forEach(item => {
+      fetch(`http://localhost:5000/api/products/${item.product_id}`)
+        .then(response => response.json())
+        .then(response => {
+          this.setState(previousState => {
+            return {totalPrice : (previousState.totalPrice + response.price)}
+          })
+        })
+    })
+  }
+
+
+  updateCart() {
     fetch(`http://localhost:5000/api/cartitems/${this.state.cartId}`, {
       method: "GET",
       mode: "cors",
@@ -61,7 +77,9 @@ class App extends Component {
         this.setState({
           cart: response.length > 0 ? response : []
         })
+        this.updatePrice()
       })
+
   }
 
   animateCart () {
@@ -116,8 +134,6 @@ class App extends Component {
           cart: []
         })
       })
-
-    this.toggleCart()
   }
 
   toggleCheckout () {
@@ -145,7 +161,7 @@ class App extends Component {
     return (
       <div className="App">
         <img className="logotype" src="https://i.imgur.com/CJ7QEi3.png"/>
-        {this.state.isCheckoutToggled && <Checkout submitOrder={this.submitOrder} toggleCart={this.toggleCart} toggleCheckout={this.toggleCheckout} clearCart={this.clearCart} cart={this.state.cart} />}
+        {this.state.isCheckoutToggled && <Checkout totalPrice={this.state.totalPrice} submitOrder={this.submitOrder} toggleCart={this.toggleCart} toggleCheckout={this.toggleCheckout} clearCart={this.clearCart} cart={this.state.cart} />}
         <div onClick={this.toggleCart} className={this.state.isCartAnimated ? 'shopping-cart animated' : 'shopping-cart'}>
           <img alt="Shopping Cart" width="25" height="25" src="https://image.flaticon.com/icons/svg/2/2772.svg"></img>
           {this.state.cart.length}
