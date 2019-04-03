@@ -26,11 +26,14 @@ namespace webshop_api.Repositories
             }
         }
 
-        public void Add(Order order)
+        public int Add(Order order)
         {
             using (var connection = new MySqlConnection(this.connectionString))
             {
-                connection.Execute("INSERT INTO Orders (customer_name, customer_address, customer_phone, order_date) VALUES(@Customer_name, @Customer_address, @Customer_phone, @Order_date)", order);
+                return connection.QuerySingleOrDefault<int>(
+                    @"INSERT INTO Orders (customer_name, customer_address, customer_phone, order_date) 
+                    VALUES(@Customer_name, @Customer_address, @Customer_phone, @Order_date); 
+                    SELECT LAST_INSERT_ID()", order);
             }
         }
     }

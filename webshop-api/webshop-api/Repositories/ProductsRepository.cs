@@ -40,7 +40,7 @@ namespace webshop_api.Repositories
 
             using (var connection = new MySqlConnection(this.connectionString))
             {
-                connection.Execute("INSERT INTO Products (Name, Description, Price) VALUES(@name, @description, @price)", product);
+                connection.Execute("INSERT INTO Products (Name, Description, Price, Image) VALUES(@name, @description, @price, @image)", product);
             }
         }
 
