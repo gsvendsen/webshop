@@ -26,7 +26,7 @@ namespace webshop_api.Controllers
         public OrdersController(IConfiguration configuration)
         {
             this.connectionString = configuration.GetConnectionString("ConnectionString");
-            this.ordersService = new OrdersService(new OrdersRepository(connectionString));
+            this.ordersService = new OrdersService(new OrdersRepository(connectionString), new OrderItemsRepository(connectionString), new ProductsRepository(connectionString), new CartItemsRepository(connectionString));
 
         }
 
@@ -47,21 +47,16 @@ namespace webshop_api.Controllers
             return Ok(order);
         }
 
-        // POST api/products/
-        [HttpPost]
+        // POST api/orders/2
+        [HttpPost("{cart_id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
 
-        public IActionResult Post([FromBody]Order order)
+        public IActionResult Post(int cart_id, [FromBody]Order order)
         {
-            var result = this.ordersService.Add(order);
+            var result = this.ordersService.Add(cart_id, order);
 
-            if (!result)
-            {
-                return BadRequest();
-            }
-
-            return Ok();
+            return Ok(new { id = result });
         }
 
     }
